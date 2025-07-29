@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Register Your Device</title>
   <style>
     * {
@@ -27,6 +27,7 @@
       padding: 30px 20px;
       width: 100%;
       max-width: 400px;
+      min-height: 85vh; /* ✅ Applied */
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
@@ -93,57 +94,5 @@
     .steps h3 {
       font-size: 16px;
       color: #007bff;
-      margin-bottom: 10px;
-    }
+      margin-b
 
-    .steps ul {
-      padding-left: 20px;
-    }
-
-    .steps li {
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: #333;
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 20px;
-      }
-      .register-button button {
-        font-size: 15px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Register Your Device</h1>
-    <p class="instructions">Register your compatible TV or device</p>
-    <p class="instructions">Enter the code shown on your device below</p>
-
-    <div class="code-input">
-      <input type="text" placeholder="eg: QV36DG" />
-    </div>
-
-    <div class="register-button">
-      <button id="registerButton">Register</button>
-    </div>
-
-    <div class="steps">
-      <h3>Steps to Register Your Device</h3>
-      <ul>
-        <li>Step 1: Open the app on your TV or device.</li>
-        <li>Step 2: Select “Register on the website.”</li>
-        <li>Step 3: A code will appear on your screen.</li>
-      </ul>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("registerButton").addEventListener("click", function () {
-      window.location.href = "index2.html";
-    });
-  </script>
-</body>
-</html>
